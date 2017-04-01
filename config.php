@@ -7,7 +7,7 @@
 //project database info
       define("DB_SERVER", "localhost");
       define("DB_USER", "root");
-      define("DB_PASSWORD", '');
+      define("DB_PASSWORD", 'sXdG160000_6');
       define("DB_DBNAME", "indoor_positioning");
 
 
