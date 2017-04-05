@@ -9,7 +9,7 @@ if(isset($_FILES['image'])){
       $file_tmp = $_FILES['image']['tmp_name'];
       $file_type = $_FILES['image']['type'];
       $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
-      $folder = "uploads/";
+      $folder = "/var/www/html/demo/thesis_indoor_wifi/uploads/";
       $expensions= array("jpeg","jpg","png");
       
       if(empty($errors)==true) {
@@ -21,7 +21,7 @@ if(isset($_FILES['image'])){
       }
    }
 
-$url = $folder.$file_name;
+$url = "http://demo.sayederfanarefin.info/thesis_indoor_wifi/uploads/".$file_name;
 perform_query("INSERT INTO maps(map_image_url,map_name)VALUES('$url','$file_name')");
 // echo $file_tmp;
 
