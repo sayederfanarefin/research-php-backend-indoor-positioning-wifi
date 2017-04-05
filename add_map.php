@@ -9,7 +9,7 @@ if(isset($_FILES['image'])){
       $file_tmp = $_FILES['image']['tmp_name'];
       $file_type = $_FILES['image']['type'];
       $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
-      $folder = "/var/www/html/demo/thesis_indoor_wifi/uploads/";
+      $folder = "uploads/";
       $expensions= array("jpeg","jpg","png");
       
       if(empty($errors)==true) {
